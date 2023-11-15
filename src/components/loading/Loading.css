@@ -1,0 +1,45 @@
+.wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary);
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {  
+  position: relative;
+  animation: loading 1200ms normal ease-out infinite;
+}
+
+.loader, .loader::after, .loader::before{
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.loader::after, .loader::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader::before{
+  animation: loading 1200ms normal linear 600ms infinite;
+}
+
+@keyframes loading {
+  0%{
+    border: 0px dotted var(--background);
+    width: 0px;
+  }
+  50%{
+    border: 6px solid var(--background);
+    width: 50px;
+  }
+  100%{
+    border: 0px dotted var(--background);
+    width: 100px;
+  }
+}

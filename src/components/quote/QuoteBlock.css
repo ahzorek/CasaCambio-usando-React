@@ -1,0 +1,72 @@
+
+.quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  font-size: .925rem;
+  padding: 1rem;
+  cursor: pointer;    
+  grid-row: span 1;
+  transition: all 30ms ease-in-out;
+  z-index: 4;
+  isolation: isolate;
+}
+
+.quote span {
+  color: var(--text);
+}
+
+.quote::after {
+  filter: blur(22px);
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: currentColor;
+  inset: 0;
+  z-index: -5;
+  border-radius: 100%;
+  transition: all 30ms ease-in-out;
+  transform: scale(.0);
+}
+
+.quote:hover::after {
+  transform: scale(.75);
+}
+
+.trending-up{
+  color: rgb( 25 150 60 /.4);
+  background-color: rgb(25 150 60 / 0.6);
+}
+
+.trending-down {
+  color: rgb( 125 25 30 /.4);
+  background-color: rgb(125 25 30 / 0.6);
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  font-size: .825rem;
+  text-align: left;
+  letter-spacing: .05;
+}
+
+.mid {
+  display: grid;
+  place-items: center;
+  font-size: 2.6rem;
+  font-weight: 500;
+  padding-top: .5rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 1.125rem;
+  font-weight: 400;
+}

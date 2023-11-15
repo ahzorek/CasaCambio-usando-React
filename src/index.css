@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Geist, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --text: rgb(248 248 248);
+  --background: rgb(13 20 20 / .6);
+  --primary: rgb(196 255 97);
+  --secondary: rgb(36 40 40);
+  --accent: rgb(234 255 199);
+  --accent_op60: rgb(234 255 199 / .6);
+
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--background);
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+::-moz-selection {
+  color: var(--background);
+  background: var(--accent);
+}
+
+::selection {
+  color: var(--background);
+  background: var(--accent);
+} 

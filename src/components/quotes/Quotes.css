@@ -1,0 +1,10 @@
+.quotes {
+  grid-area: quotes;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
+  isolation: isolate;
+  /* remove later */
+  /* background-color: aquamarine;  */
+
+}

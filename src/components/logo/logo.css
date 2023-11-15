@@ -1,0 +1,9 @@
+ #logo {
+  width: 180px;
+  mix-blend-mode: lighten;
+}
+@media screen and (min-width: 1048px) {
+  #logo {
+    width: 228px;
+  }
+}

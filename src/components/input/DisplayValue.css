@@ -1,0 +1,30 @@
+.value-display{
+  height: 100%;
+  width: 100%;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-color: transparent;
+  font-size: 3rem;
+}
+
+.value-display:focus{
+  background-color: rgb(100 100 100/.2);
+  outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media screen and (min-width: 820px) {
+  .value-display{
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 1048px) {
+  .value-display{
+    font-size: 7.5rem;
+  }
+}

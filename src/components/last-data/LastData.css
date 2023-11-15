@@ -1,0 +1,8 @@
+.info {
+  grid-area: info;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(220 220 220 /.6);
+  letter-spacing: 1.08;
+}
